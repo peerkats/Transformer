@@ -1,18 +1,13 @@
-mod file;
-mod math;
-mod vocab;
-use rand::*;
-
-use file::*;
-use vocab::*;
+mod lib;
+use lib::vocab::Vocab;
+use lib::file::read_file_lines;
+use lib::math::Tensor;
 use std::io;
-use crate::math::Tensor;
-
 
 const PATH: &str = "../transformer/20k.txt";
 fn main(){  
-    let data = read_file_lines(PATH);
-    let vocab = Vocab::new(data.expect("REASON"));
+    
+    let vocab = Vocab::from(PATH);  // Use From trait instead of new
     let d_model = 256;
     // get an input from the user
     println!("Enter a word to get its index:");
