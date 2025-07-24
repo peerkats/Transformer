@@ -1,0 +1,1 @@
+nvcc -shared -Xcompiler -fPIC "$1".cu -o lib"$1".so

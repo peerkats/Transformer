@@ -6,3 +6,5 @@ edition = "2021"
 [dependencies]
 rayon = "1.10.0"
 rand = "0.9.1"
+
+
