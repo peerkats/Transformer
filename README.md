@@ -5,7 +5,7 @@
 
 # Transformer
 
-Welcome to **Transformer** – a work in progress project aimed at providing a high-performance transformer-based solution optimized for Rust environments. 
+Welcome to **Transformer** – a work in progress project. 
 
 > **Note:** This project is in the very early stages of development. Features and APIs are subject to change.
 
